@@ -18,6 +18,31 @@ header {
   max-width: 800px;
 }
 
+.buttons {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  align-items: stretch;
+  justify-items: center;
+  gap: 1em;
+}
+
+.button {
+  /* center within */
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 1em;
+  border-radius: 0.5em;
+  color: #f5f0e6;
+  background-color: #653508;
+}
+
 header {
   display: flex;
   justify-content: space-around;
@@ -211,6 +236,11 @@ a:hover {
   /* holiday cheer */
   color: #df2021 !important;
   text-decoration-color: #df2021;
+}
+
+.button.special {
+  color: #f5f0e6 !important;
+  background-color: #df2021;
 }
 
 /* 𝓙𝓪𝓬𝓸𝓫 𝓕𝓸𝓻𝓭, 2021 */
